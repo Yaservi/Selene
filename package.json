@@ -1,0 +1,11 @@
+{
+  "name": "selene-space-apps-2026",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "verify": "node scripts/verify.mjs",
+    "serve": "python3 -m http.server 8000 --directory dist"
+  }
+}

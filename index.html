@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#06111d">
+  <meta name="description" content="Compare sunlight, Earth visibility, and geometric DSN access above the lunar south pole's local terrain horizon.">
+  <title>SELENE — Lunar South Pole Navigator</title>
+  <link rel="stylesheet" href="src/styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <button id="open-settings" class="icon-button menu-toggle" type="button" aria-label="Configure sites" aria-controls="settings" aria-expanded="false"><span data-icon="menu"></span></button>
+    <div class="brand"><span>SELENE</span><i></i></div>
+    <span class="source-tag">JPL HORIZONS · NASA LOLA</span>
+  </header>
+
+  <main id="app" class="app-shell" aria-live="off">
+    <section class="moon-stage" aria-label="Interactive lunar globe">
+      <canvas id="moon" width="680" height="680" aria-label="Lunar globe. Drag to rotate, or use the reset button."></canvas>
+      <svg id="sky-overlay" class="sky-overlay" aria-label="Projected directions of the Sun and Earth from the selected lunar site"></svg>
+      <svg class="globe-grid" viewBox="0 0 680 680" aria-hidden="true">
+        <g fill="none" stroke="#d7e6ea" stroke-opacity=".34" stroke-width=".8"><circle cx="340" cy="340" r="115"/><circle cx="340" cy="340" r="220"/><circle cx="340" cy="340" r="289"/><path d="M340 12v656M56 176l568 328M56 504l568-328"/></g>
+        <g fill="#dce9ee" font-size="13" text-anchor="middle"><text x="340" y="35">0°</text><text x="618" y="188">60°</text><text x="619" y="500">120°</text><text x="340" y="646">180°</text><text x="62" y="500">240°</text><text x="62" y="188">300°</text><text x="340" y="335" font-size="11">South Pole</text></g>
+      </svg>
+      <div id="site-markers" class="site-markers" aria-label="Nine lunar candidate locations"></div>
+      <button class="site-pin pin-a" type="button" data-pin="0"></button>
+      <button class="site-pin pin-b" type="button" data-pin="1"></button>
+      <p class="globe-note">Regional terrain horizon · observer 2 m above ground</p>
+      <p class="globe-credit">Moon imagery: NASA SVS / LROC WAC · global lighting is illustrative</p>
+    </section>
+
+    <aside id="sky-readout" class="glass sky-readout" aria-label="Selected site and celestial angles"></aside>
+
+    <aside id="settings" class="glass settings" hidden aria-label="Configure comparison">
+      <div class="panel-title"><h2>Configure sites</h2><button type="button" id="close-settings" class="subtle-button" aria-label="Close site settings"><span data-icon="close"></span></button></div>
+      <p class="setting-intro">Choose two candidate locations to compare.</p>
+      <div class="site-picker"><label for="site-a">Site A</label><select id="site-a"></select></div>
+      <div class="site-picker"><label for="site-b">Site B</label><select id="site-b"></select></div>
+      <div class="site-picker"><label for="start-date">Start date (UTC)</label><input type="date" id="start-date" value="2027-01-15" min="2027-01-15" max="2027-01-16"></div>
+      <div class="site-picker"><label for="period">Duration</label><select id="period"><option value="7">7 days</option><option value="14" selected>14 days</option><option value="28">28 days</option></select></div>
+      <button type="button" id="apply" class="primary-button">Apply comparison <span>↗</span></button>
+      <div class="settings-actions"><button type="button" id="open-terrain">Explore local terrain</button><button type="button" id="open-method">Method &amp; limitations</button></div>
+    </aside>
+
+    <div class="right-rail">
+      <section class="glass compare-panel" aria-label="Compare sites">
+        <button type="button" id="toggle-compare" class="panel-title toggle-title" aria-expanded="true"><span>Compare sites</span><span aria-hidden="true">⌄</span></button>
+        <div id="site-cards" class="site-cards"></div>
+      </section>
+
+      <button type="button" id="open-horizon" class="glass horizon-panel" aria-label="Expand local horizon">
+        <div class="panel-title"><h2 id="horizon-title">Local horizon</h2><span aria-hidden="true">⛶</span></div>
+        <div id="horizon-preview"></div>
+      </button>
+    </div>
+
+    <section id="availability" class="glass availability-panel" aria-label="Availability windows" hidden>
+      <div class="panel-title"><h2>Availability windows · <span id="window-days">14</span> days</h2><button type="button" id="close-availability" class="subtle-button" aria-label="Close availability windows"><span data-icon="close"></span></button></div>
+      <p class="window-explainer">Green marks hours with both sunlight and a geometrically visible DSN station.</p>
+      <div id="availability-content"></div>
+    </section>
+
+    <button id="reset-globe" type="button" class="mini-map" aria-label="Reset lunar globe"><span>LIVE VIEW</span><canvas id="mini-globe" width="160" height="160" aria-hidden="true"></canvas><span id="mini-caption">NR101 · reset</span></button>
+    <div class="control-dock">
+      <nav class="tool-buttons" aria-label="View tools">
+        <button type="button" id="show-fullscreen" aria-label="Enter fullscreen" title="Enter fullscreen" aria-pressed="false"><span data-icon="maximize"></span></button>
+        <button type="button" id="toggle-clean" aria-label="Show Moon only" title="Show Moon only" aria-pressed="false"><span data-icon="panels-off"></span></button>
+        <button type="button" id="show-windows" aria-label="Availability windows" title="Availability windows"><span data-icon="windows"></span></button>
+        <button type="button" id="show-terrain" aria-label="Local terrain" title="Local terrain"><span data-icon="terrain"></span></button>
+      </nav>
+      <section class="glass player" aria-label="Time controls">
+        <button type="button" id="play" class="play-button" aria-label="Play timeline"><span data-icon="play"></span></button>
+        <div class="time-track"><time id="clock" datetime="2027-01-15T00:00:00Z"></time><input id="time" type="range" min="0" max="335" value="42" step="0.01" aria-label="Time within selected date range"></div>
+        <div class="player-options">
+          <button type="button" id="step-back" aria-label="Step back 12 hours"><span data-icon="chevron-left"></span></button>
+          <label>Step <select id="step"><option value="1">1 h</option><option value="6">6 h</option><option value="12" selected>12 h</option></select></label>
+          <button type="button" id="step-next" aria-label="Step forward 12 hours"><span data-icon="chevron-right"></span></button>
+          <label>Speed <select id="speed"><option value="1">1×</option><option value="2">2×</option><option value="5">5×</option></select></label>
+          <label>Period <select id="player-period" aria-label="Comparison period"><option value="7">7 days</option><option value="14" selected>14 days</option><option value="28">28 days</option></select></label>
+          <span class="playback-hint" id="rate">1 simulated hour / second</span>
+        </div>
+      </section>
+    </div>
+    <div id="notice" class="notice" role="status" hidden></div>
+  </main>
+
+  <dialog id="detail" class="detail-dialog"><div class="glass dialog-inner"><button type="button" id="close-detail" class="dialog-close" aria-label="Close dialog"><span data-icon="close"></span></button><p id="detail-kicker" class="kicker"></p><h2 id="detail-heading"></h2><div id="detail-body"></div></div></dialog>
+  <script type="module" src="src/main.js"></script>
+</body>
+</html>

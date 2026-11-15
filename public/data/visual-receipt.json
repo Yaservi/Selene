@@ -1,0 +1,13 @@
+{
+  "generated_utc": "2026-11-14T16:56:51.451053+00:00",
+  "source": "NASA Scientific Visualization Studio CGI Moon Kit, https://svs.gsfc.nasa.gov/4720/",
+  "source_sha256": {
+    "lroc_color_poles_4k.tif": "918649a7f8ed2f1329b2cd95bb0d25483befdcb60ae1a66db681a637cc21344f",
+    "ldem_4.tif": "330afa2556a86fd05ac6ba2f912f246600fdade35de2a0d90593d50d07b01b65"
+  },
+  "output_sha256": {
+    "moon.webp": "6b8da5e947966d9ecf3fb60eb3156ea35df33bb56244e1991ed0de3b443c1df6",
+    "relief.webp": "7df466f6cf64bd61d80c1824b42cdeafc708cdf129f3d1f9fd6796615605baee"
+  },
+  "note": "Globe rendering only; no scientific visibility calculation uses these textures."
+}

@@ -1,0 +1,23 @@
+{
+  "generated_utc": "2026-11-14T17:54:09.615971+00:00",
+  "sources": {
+    "fine": "https://pgda.gsfc.nasa.gov/data/LOLA_20mpp/LDEM_83S_10MPP_ADJ.TIF",
+    "near": "https://pgda.gsfc.nasa.gov/data/LOLA_20mpp/LDEM_80S_80MPP_ADJ.TIF",
+    "far": "https://pgda.gsfc.nasa.gov/data/LOLA_20mpp/LDEM_60S_240MPP_ADJ.TIF",
+    "malapert": "https://pgda.gsfc.nasa.gov/data/LOLA_5mpp/Site23/Site23_final_adj_5mpp_surf.tif"
+  },
+  "malapert_source_sha256": "12d280a59cd7580415f6bada638d0abe025ce6727541fddf68d5dc371a6c94cf",
+  "method": "Bilinear south-polar stereographic LOLA heights; 5 m Site23 near Malapert, 10 m elsewhere; spherical rays at 0.125 degrees for Nobile sites and 0.25 degrees elsewhere, 0.5 m radial steps inside 100 m, 1 m to 5 km, 80 m to 20 km, 240 m to 200 km; observer height 2 m.",
+  "sha256": {
+    "terrain-0.json": "e959d5074d016f249af22931deb0f5549428f7d4cff5dcc80f74af39f3ab25d3",
+    "terrain-1.json": "d93827467d517afc2c5537922b8e3253bda34022e45c4916cb1887906cf3b1cb",
+    "terrain-2.json": "303bbd42656b6c51106e8557ebf345d938602508c6addd5e88ef9faac36a9000",
+    "terrain-3.json": "b467c6c79f801734c7b5d76f2fad29b8d09b320cc6260b9a34596924c2f68410",
+    "terrain-4.json": "93729c88a38b45d39b98009ad2e581574e45db352aa85db0f89a1574f6ddf7c9",
+    "terrain-5.json": "8f2b40f24b74eafebeedfca99aae60c90d27f8f31421f7a60b5372296638b78d",
+    "terrain-6.json": "f01e55a5ef338422e07f14e205a6e7649ab2a82742969bd602bb5d8e63b0bf77",
+    "terrain-7.json": "ccc84bc2f16eaf306a438c6cd5e4e2754d1beabcb8a9efc01d211efd31b57bbf",
+    "terrain-8.json": "c4f5a1e093b81562b501888248f74dbfff739776344ea2055f7b5ffe39251a66",
+    "horizons.json": "fca5f8ef8b7c13c44b1b98633407d11f09aa9970f9cf39bde24cde94f1f0b524"
+  }
+}

@@ -1,0 +1,413 @@
+{
+  "generated_utc": "2026-11-14T17:54:51.673024+00:00",
+  "input_horizons_sha256": "fca5f8ef8b7c13c44b1b98633407d11f09aa9970f9cf39bde24cde94f1f0b524",
+  "jpl_queries": [
+    {
+      "site": 0,
+      "body": 10,
+      "url": "https://ssd.jpl.nasa.gov/api/horizons.api",
+      "query": {
+        "format": "json",
+        "COMMAND": "10",
+        "EPHEM_TYPE": "OBSERVER",
+        "CENTER": "coord@301",
+        "COORD_TYPE": "GEODETIC",
+        "SITE_COORD": "36.917,-85.295,6.76967333984375",
+        "START_TIME": "2027-01-15",
+        "STOP_TIME": "2027-02-14",
+        "STEP_SIZE": "1 h",
+        "QUANTITIES": "4,13",
+        "CSV_FORMAT": "YES",
+        "APPARENT": "AIRLESS"
+      },
+      "response_sha256": "f65f4a9208b23b27988214372e160d5fe43236284a1680b2c929e89c6096c699"
+    },
+    {
+      "site": 0,
+      "body": 399,
+      "url": "https://ssd.jpl.nasa.gov/api/horizons.api",
+      "query": {
+        "format": "json",
+        "COMMAND": "399",
+        "EPHEM_TYPE": "OBSERVER",
+        "CENTER": "coord@301",
+        "COORD_TYPE": "GEODETIC",
+        "SITE_COORD": "36.917,-85.295,6.76967333984375",
+        "START_TIME": "2027-01-15",
+        "STOP_TIME": "2027-02-14",
+        "STEP_SIZE": "1 h",
+        "QUANTITIES": "4,13",
+        "CSV_FORMAT": "YES",
+        "APPARENT": "AIRLESS"
+      },
+      "response_sha256": "c2e9b676a501b5afaaf00dacafbe44e8688db16cd61107b5784ee40e8df4200d"
+    },
+    {
+      "site": 1,
+      "body": 10,
+      "url": "https://ssd.jpl.nasa.gov/api/horizons.api",
+      "query": {
+        "format": "json",
+        "COMMAND": "10",
+        "EPHEM_TYPE": "OBSERVER",
+        "CENTER": "coord@301",
+        "COORD_TYPE": "GEODETIC",
+        "SITE_COORD": "59.197,-84.074,1.4591695556640625",
+        "START_TIME": "2027-01-15",
+        "STOP_TIME": "2027-02-14",
+        "STEP_SIZE": "1 h",
+        "QUANTITIES": "4,13",
+        "CSV_FORMAT": "YES",
+        "APPARENT": "AIRLESS"
+      },
+      "response_sha256": "93d3893be57d945327d82b768823f227dc79ee1198ac763a602e1a6316ddaf07"
+    },
+    {
+      "site": 1,
+      "body": 399,
+      "url": "https://ssd.jpl.nasa.gov/api/horizons.api",
+      "query": {
+        "format": "json",
+        "COMMAND": "399",
+        "EPHEM_TYPE": "OBSERVER",
+        "CENTER": "coord@301",
+        "COORD_TYPE": "GEODETIC",
+        "SITE_COORD": "59.197,-84.074,1.4591695556640625",
+        "START_TIME": "2027-01-15",
+        "STOP_TIME": "2027-02-14",
+        "STEP_SIZE": "1 h",
+        "QUANTITIES": "4,13",
+        "CSV_FORMAT": "YES",
+        "APPARENT": "AIRLESS"
+      },
+      "response_sha256": "7c9b06156870a371c82532013e2641242b2580e3ab51f018e8f5782ecc60d16f"
+    },
+    {
+      "site": 2,
+      "body": 10,
+      "url": "https://ssd.jpl.nasa.gov/api/horizons.api",
+      "query": {
+        "format": "json",
+        "COMMAND": "10",
+        "EPHEM_TYPE": "OBSERVER",
+        "CENTER": "coord@301",
+        "COORD_TYPE": "GEODETIC",
+        "SITE_COORD": "2.056,-85.992,5.17143603515625",
+        "START_TIME": "2027-01-15",
+        "STOP_TIME": "2027-02-14",
+        "STEP_SIZE": "1 h",
+        "QUANTITIES": "4,13",
+        "CSV_FORMAT": "YES",
+        "APPARENT": "AIRLESS"
+      },
+      "response_sha256": "fa341e99488a24b04f17d048a02b5e28d1198e76339d155f6e51ab5df400d8f6"
+    },
+    {
+      "site": 2,
+      "body": 399,
+      "url": "https://ssd.jpl.nasa.gov/api/horizons.api",
+      "query": {
+        "format": "json",
+        "COMMAND": "399",
+        "EPHEM_TYPE": "OBSERVER",
+        "CENTER": "coord@301",
+        "COORD_TYPE": "GEODETIC",
+        "SITE_COORD": "2.056,-85.992,5.17143603515625",
+        "START_TIME": "2027-01-15",
+        "STOP_TIME": "2027-02-14",
+        "STEP_SIZE": "1 h",
+        "QUANTITIES": "4,13",
+        "CSV_FORMAT": "YES",
+        "APPARENT": "AIRLESS"
+      },
+      "response_sha256": "b976aed4e19b6484d17b28eadfd4521cad9a3c1a53b7db61cbca97a270ea6d1b"
+    },
+    {
+      "site": 3,
+      "body": 10,
+      "url": "https://ssd.jpl.nasa.gov/api/horizons.api",
+      "query": {
+        "format": "json",
+        "COMMAND": "10",
+        "EPHEM_TYPE": "OBSERVER",
+        "CENTER": "coord@301",
+        "COORD_TYPE": "GEODETIC",
+        "SITE_COORD": "290.017,-83.763,3.62887353515625",
+        "START_TIME": "2027-01-15",
+        "STOP_TIME": "2027-02-14",
+        "STEP_SIZE": "1 h",
+        "QUANTITIES": "4,13",
+        "CSV_FORMAT": "YES",
+        "APPARENT": "AIRLESS"
+      },
+      "response_sha256": "612bc9a376e22ef9987fa37fe59069effb4726f5293de717eb7e1e00b2a17998"
+    },
+    {
+      "site": 3,
+      "body": 399,
+      "url": "https://ssd.jpl.nasa.gov/api/horizons.api",
+      "query": {
+        "format": "json",
+        "COMMAND": "399",
+        "EPHEM_TYPE": "OBSERVER",
+        "CENTER": "coord@301",
+        "COORD_TYPE": "GEODETIC",
+        "SITE_COORD": "290.017,-83.763,3.62887353515625",
+        "START_TIME": "2027-01-15",
+        "STOP_TIME": "2027-02-14",
+        "STEP_SIZE": "1 h",
+        "QUANTITIES": "4,13",
+        "CSV_FORMAT": "YES",
+        "APPARENT": "AIRLESS"
+      },
+      "response_sha256": "16be86b8388d0a03bde59b18dcacaa95bad97c029aad4735605eacd43e8abc2b"
+    },
+    {
+      "site": 4,
+      "body": 10,
+      "url": "https://ssd.jpl.nasa.gov/api/horizons.api",
+      "query": {
+        "format": "json",
+        "COMMAND": "10",
+        "EPHEM_TYPE": "OBSERVER",
+        "CENTER": "coord@301",
+        "COORD_TYPE": "GEODETIC",
+        "SITE_COORD": "335.746,-86.99,1.7889442138671876",
+        "START_TIME": "2027-01-15",
+        "STOP_TIME": "2027-02-14",
+        "STEP_SIZE": "1 h",
+        "QUANTITIES": "4,13",
+        "CSV_FORMAT": "YES",
+        "APPARENT": "AIRLESS"
+      },
+      "response_sha256": "8c93f2e77646cb9b982d1669afa8a3f29dd8574e7c27ee318d760843dfee7f5f"
+    },
+    {
+      "site": 4,
+      "body": 399,
+      "url": "https://ssd.jpl.nasa.gov/api/horizons.api",
+      "query": {
+        "format": "json",
+        "COMMAND": "399",
+        "EPHEM_TYPE": "OBSERVER",
+        "CENTER": "coord@301",
+        "COORD_TYPE": "GEODETIC",
+        "SITE_COORD": "335.746,-86.99,1.7889442138671876",
+        "START_TIME": "2027-01-15",
+        "STOP_TIME": "2027-02-14",
+        "STEP_SIZE": "1 h",
+        "QUANTITIES": "4,13",
+        "CSV_FORMAT": "YES",
+        "APPARENT": "AIRLESS"
+      },
+      "response_sha256": "902a0b2a00e334927d7a30b8cd17a0113b23b153b121f5b287c317846c89ecdd"
+    },
+    {
+      "site": 5,
+      "body": 10,
+      "url": "https://ssd.jpl.nasa.gov/api/horizons.api",
+      "query": {
+        "format": "json",
+        "COMMAND": "10",
+        "EPHEM_TYPE": "OBSERVER",
+        "CENTER": "coord@301",
+        "COORD_TYPE": "GEODETIC",
+        "SITE_COORD": "24.887,-84.805,5.0203369140625",
+        "START_TIME": "2027-01-15",
+        "STOP_TIME": "2027-02-14",
+        "STEP_SIZE": "1 h",
+        "QUANTITIES": "4,13",
+        "CSV_FORMAT": "YES",
+        "APPARENT": "AIRLESS"
+      },
+      "response_sha256": "83260e061439908cc562d0fb582b76a558fda03f4658c853eb3391fc458f9838"
+    },
+    {
+      "site": 5,
+      "body": 399,
+      "url": "https://ssd.jpl.nasa.gov/api/horizons.api",
+      "query": {
+        "format": "json",
+        "COMMAND": "399",
+        "EPHEM_TYPE": "OBSERVER",
+        "CENTER": "coord@301",
+        "COORD_TYPE": "GEODETIC",
+        "SITE_COORD": "24.887,-84.805,5.0203369140625",
+        "START_TIME": "2027-01-15",
+        "STOP_TIME": "2027-02-14",
+        "STEP_SIZE": "1 h",
+        "QUANTITIES": "4,13",
+        "CSV_FORMAT": "YES",
+        "APPARENT": "AIRLESS"
+      },
+      "response_sha256": "7cc9d88d2297266dab1b8adff20e5df2b51eff6383a52c829af7a2257570d3c7"
+    },
+    {
+      "site": 6,
+      "body": 10,
+      "url": "https://ssd.jpl.nasa.gov/api/horizons.api",
+      "query": {
+        "format": "json",
+        "COMMAND": "10",
+        "EPHEM_TYPE": "OBSERVER",
+        "CENTER": "coord@301",
+        "COORD_TYPE": "GEODETIC",
+        "SITE_COORD": "33.04,-85.466,6.18290966796875",
+        "START_TIME": "2027-01-15",
+        "STOP_TIME": "2027-02-14",
+        "STEP_SIZE": "1 h",
+        "QUANTITIES": "4,13",
+        "CSV_FORMAT": "YES",
+        "APPARENT": "AIRLESS"
+      },
+      "response_sha256": "bcaa9ac5a6fc77d0c6fa1ebe83e56f09e56c17f5bbaafba67a6eb741773d6fc8"
+    },
+    {
+      "site": 6,
+      "body": 399,
+      "url": "https://ssd.jpl.nasa.gov/api/horizons.api",
+      "query": {
+        "format": "json",
+        "COMMAND": "399",
+        "EPHEM_TYPE": "OBSERVER",
+        "CENTER": "coord@301",
+        "COORD_TYPE": "GEODETIC",
+        "SITE_COORD": "33.04,-85.466,6.18290966796875",
+        "START_TIME": "2027-01-15",
+        "STOP_TIME": "2027-02-14",
+        "STEP_SIZE": "1 h",
+        "QUANTITIES": "4,13",
+        "CSV_FORMAT": "YES",
+        "APPARENT": "AIRLESS"
+      },
+      "response_sha256": "415d8eef65f754268602a8c3366c75c6012cc423f02e60d8a799f7f2a11fea6f"
+    },
+    {
+      "site": 7,
+      "body": 10,
+      "url": "https://ssd.jpl.nasa.gov/api/horizons.api",
+      "query": {
+        "format": "json",
+        "COMMAND": "10",
+        "EPHEM_TYPE": "OBSERVER",
+        "CENTER": "coord@301",
+        "COORD_TYPE": "GEODETIC",
+        "SITE_COORD": "292.141,-88.45,1.5799947509765624",
+        "START_TIME": "2027-01-15",
+        "STOP_TIME": "2027-02-14",
+        "STEP_SIZE": "1 h",
+        "QUANTITIES": "4,13",
+        "CSV_FORMAT": "YES",
+        "APPARENT": "AIRLESS"
+      },
+      "response_sha256": "7068b653e76b7b85621640757ab6078871ee3317259024d49234283331e2f4bc"
+    },
+    {
+      "site": 7,
+      "body": 399,
+      "url": "https://ssd.jpl.nasa.gov/api/horizons.api",
+      "query": {
+        "format": "json",
+        "COMMAND": "399",
+        "EPHEM_TYPE": "OBSERVER",
+        "CENTER": "coord@301",
+        "COORD_TYPE": "GEODETIC",
+        "SITE_COORD": "292.141,-88.45,1.5799947509765624",
+        "START_TIME": "2027-01-15",
+        "STOP_TIME": "2027-02-14",
+        "STEP_SIZE": "1 h",
+        "QUANTITIES": "4,13",
+        "CSV_FORMAT": "YES",
+        "APPARENT": "AIRLESS"
+      },
+      "response_sha256": "d7a5f207643623ad9da9b6978bee2a389f391ccbfbf3c5357531d4fb417e2186"
+    },
+    {
+      "site": 8,
+      "body": 10,
+      "url": "https://ssd.jpl.nasa.gov/api/horizons.api",
+      "query": {
+        "format": "json",
+        "COMMAND": "10",
+        "EPHEM_TYPE": "OBSERVER",
+        "CENTER": "coord@301",
+        "COORD_TYPE": "GEODETIC",
+        "SITE_COORD": "124.521,-87.478,0.06912814331054687",
+        "START_TIME": "2027-01-15",
+        "STOP_TIME": "2027-02-14",
+        "STEP_SIZE": "1 h",
+        "QUANTITIES": "4,13",
+        "CSV_FORMAT": "YES",
+        "APPARENT": "AIRLESS"
+      },
+      "response_sha256": "13cbaccc009298681e7272329427099e15426274a655d9ca9e82da685d63fcc9"
+    },
+    {
+      "site": 8,
+      "body": 399,
+      "url": "https://ssd.jpl.nasa.gov/api/horizons.api",
+      "query": {
+        "format": "json",
+        "COMMAND": "399",
+        "EPHEM_TYPE": "OBSERVER",
+        "CENTER": "coord@301",
+        "COORD_TYPE": "GEODETIC",
+        "SITE_COORD": "124.521,-87.478,0.06912814331054687",
+        "START_TIME": "2027-01-15",
+        "STOP_TIME": "2027-02-14",
+        "STEP_SIZE": "1 h",
+        "QUANTITIES": "4,13",
+        "CSV_FORMAT": "YES",
+        "APPARENT": "AIRLESS"
+      },
+      "response_sha256": "706f541c20616b6b0c731db8d29c2ec5fb2135d787c343ef343c5ed01c6e38c1"
+    }
+  ],
+  "naif_kernels": [
+    {
+      "url": "https://naif.jpl.nasa.gov/pub/naif/generic_kernels/lsk/naif0012.tls",
+      "bytes": 5257,
+      "sha256": "678e32bdb5a744117a467cd9601cd6b373f0e9bc9bbde1371d5eee39600a039b"
+    },
+    {
+      "url": "https://naif.jpl.nasa.gov/pub/naif/generic_kernels/pck/pck00011.tpc",
+      "bytes": 131226,
+      "sha256": "3dff7b1dbeceaa01f25467767d3fa25816051c85d162d1edf04acb310ee28bb1"
+    },
+    {
+      "url": "https://naif.jpl.nasa.gov/pub/naif/generic_kernels/pck/moon_pa_de440_200625.bpc",
+      "bytes": 12863488,
+      "sha256": "60cd55aa401ea2ea97360636f567554bfe4e37bb829f901b4460a455dfaf783f"
+    },
+    {
+      "url": "https://naif.jpl.nasa.gov/pub/naif/generic_kernels/fk/satellites/moon_de440_250416.tf",
+      "bytes": 19478,
+      "sha256": "a47c71e9c9f33796bdafb2c9d69a7ee447b6016ecad80f71cd6f3e479f9cf768"
+    },
+    {
+      "url": "https://naif.jpl.nasa.gov/pub/naif/generic_kernels/spk/planets/de440s.bsp",
+      "bytes": 32726016,
+      "sha256": "c1c7feeab882263fc493a9d5a5b2ddd71b54826cdf65d8d17a76126b260a49f2"
+    },
+    {
+      "url": "https://naif.jpl.nasa.gov/pub/naif/generic_kernels/pck/earth_1962_260806_2126_combined.bpc",
+      "bytes": 31318016,
+      "sha256": "cc87ad1a495cf598800ba403763d350f087ac0b97da9fec603278a3864c6a53e"
+    },
+    {
+      "url": "https://naif.jpl.nasa.gov/pub/naif/generic_kernels/spk/stations/earthstns_itrf93_260814.bsp",
+      "bytes": 26624,
+      "sha256": "007eb0aad5dd022c6d61bdbfb2395680bd1eb31c49a8637d0b0a1cfbea737c6b"
+    },
+    {
+      "url": "https://naif.jpl.nasa.gov/pub/naif/generic_kernels/fk/stations/earth_topo_260814.tf",
+      "bytes": 69400,
+      "sha256": "4f40cd1e86718047bc8ea6ff6bd063c9fbf36102b63f0dca370c8e94fd282490"
+    }
+  ],
+  "method": "JPL airless lunar observer angles, 1 h cadence; NAIF geometric station contact at 2 m above LOLA terrain with 6 degree Earth-station cutoff.",
+  "sha256": {
+    "ephemeris.json": "8501e8e1c6749c53f73a3ece63fa264d08139979d984ab401c1553ca624c9f10",
+    "dsn.json": "917ae8e3b41b9baef29eb42fc7db8ca20267c8ca71814a234385c93a0349c6ad"
+  }
+}

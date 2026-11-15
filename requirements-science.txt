@@ -1,0 +1,8 @@
+numpy==2.3.5
+scipy==1.17.0
+rasterio==1.5.2
+requests==2.34.2
+spiceypy==8.4.0
+pillow==13.0.0
+tifffile==2026.11.12
+imagecodecs==2026.11.11
